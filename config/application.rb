@@ -1,8 +1,7 @@
 require File.expand_path('../boot', __FILE__)
-config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
-
 
 require 'rails/all'
+require 'bootstrap-sass'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
