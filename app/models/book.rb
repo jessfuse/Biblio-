@@ -7,8 +7,8 @@ class Book < ActiveRecord::Base
   after_create :fetch_info
 
   def fetch_info
-    @client ||= Goodreads.new(:api_key => 'NwJhZd9iMC3OMe6WJQtLCg')
+    @client ||= Goodreads.new
     book_info = @client.book_by_isbn(isbn)
-    asdfasdflk
+    
   end
 end
